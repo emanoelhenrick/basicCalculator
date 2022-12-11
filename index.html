@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="calc-form">
+            <div class="tela-out">
+                <h1>0</h1>
+            </div>
+            <div class="operadores">
+                <button onclick="calcReset()">CE</button>
+                <button onclick="imputCalcOperator('/')">/</button>
+                <button onclick="imputCalcOperator('*')">*</button>
+                <button onclick="imputCalcOperator('-')">-</button>
+                <button onclick="imputCalcOperator('+')">+</button>
+                
+            </div>
+            <div class="numeros">
+                <button onclick="imputCalc('1')">1</button>
+                <button onclick="imputCalc('2')">2</button>
+                <button onclick="imputCalc('3')">3</button>
+                <button onclick="imputCalc('4')">4</button>
+                <button onclick="imputCalc('5')">5</button>
+                <button onclick="imputCalc('6')">6</button>
+                <button onclick="imputCalc('7')">7</button>
+                <button onclick="imputCalc('8')">8</button>
+                <button onclick="imputCalc('9')">9</button>
+                <button onclick="imputCalc('0')">0</button>
+                <button id="igual" onclick="calcResult('=')">=</button>
+            
+            </div>
+
+            <span class="versao">akemi.calculator-v1.0</span>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
